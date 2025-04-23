@@ -1,0 +1,9 @@
+An unhandled exception occurred.
+PbiTools.Serialization.PbixProjSerializationException: The PBIX part at 'D:\a\1\self\POWERBITMDL.Report\Version.txt' could not be deserialized and is marked as not optional.
+   at PbiTools.Serialization.PowerBIPartSerializerExtensions.DeserializeSafe[T](IPowerBIPartSerializer`1 serializer, Boolean isOptional) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Serialization\IPowerBIPartSerializer.cs:line 67
+   at PbiTools.Model.PbixModel.FromFolder(String path) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Model\PbixModel.cs:line 217
+   at PbiTools.Cli.CmdLineActions.CompilePbix(String folder, String outPath, PbiFileFormat format, Boolean overwrite) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Cli\Compile.cs:line 86
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at PowerArgs.ArgAction.Invoke()
+   at PbiTools.Program.Main(String[] args) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Program.cs:line 139
