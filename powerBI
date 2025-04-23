@@ -7,3 +7,14 @@ PbiTools.Serialization.PbixProjSerializationException: The PBIX part at 'D:\a\1\
    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
    at PowerArgs.ArgAction.Invoke()
    at PbiTools.Program.Main(String[] args) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Program.cs:line 139
+
+
+System.NotSupportedException: The PBIX file/project does not contain a V3 model. This API only supports the V3 PBIX format.
+   at PbiTools.Model.PbixModel.EnsureV3Model() in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Model\PbixModel.cs:line 103
+   at PbiTools.Model.PbixModel.FromFolder(String path) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Model\PbixModel.cs:line 220
+   at PbiTools.Cli.CmdLineActions.CompilePbix(String folder, String outPath, PbiFileFormat format, Boolean overwrite) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Cli\Compile.cs:line 86
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at PowerArgs.ArgAction.Invoke()
+   at PbiTools.Program.Main(String[] args) in X:\pbi-tools\BRANCHES\1.2\src\PBI-Tools\Program.cs:line 139
+
